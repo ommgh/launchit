@@ -1,12 +1,11 @@
-import Hero from "@/components/landing/Hero";
-import { SiteNavbar } from "@/components/landing/Navbar";
+import LandingPage from "@/components/landing/LandingPage";
 
-export default function Page() {
+export default function Component() {
   return (
     <div>
-      <div className="absolute inset-0 bg-[url('/noise.png')] opacity-50 pointer-events-none"></div>
-      <SiteNavbar />
-      <Hero />
+      <div className="min-h-screen relative flex flex-col">
+        <LandingPage />
+      </div>
     </div>
   );
 }
